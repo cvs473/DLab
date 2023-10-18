@@ -179,3 +179,10 @@ if __name__ == '__main__':
     numB.setHex(test_sub2)
     test_sub_res = "10e570324e6ffdbc6b9c813dec968d9bad134bc0dbb061530934f4e59c2700b9" 
     print((numA - numB).getHex() == test_sub_res)
+
+    test_inv = "eb8fa7e7"
+    numA = MyBigInt()
+    numA.setHex(test_inv)
+    test_inv_res = "14705818"
+    print(numA.inv() == test_inv_res)
+    
