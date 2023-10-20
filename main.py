@@ -226,34 +226,34 @@ if __name__ == '__main__':
     test_xor1 = "51bf608414ad5726a3c1bec098f77b1b54ffb2787f8d528a74c1d7fde6470ea4"     
     test_xor2 = "403db8ad88a3932a0b7e8189aed9eeffb8121dfac05c3512fdb396dd73f6331c"     
     test_xor_res = "1182d8299c0ec40ca8bf3f49362e95e4ecedaf82bfd167988972412095b13db8" 
-    #print(MyBigInt.xor(test_xor1, test_xor2).getHex() == test_xor_res)
+    print(MyBigInt.xor(test_xor1, test_xor2).getHex() == test_xor_res)
 
     test_add1 = "36f028580bb02cc8272a9a020f4200e346e276ae664e45ee80745574e2f5ab80"     
     test_add2 = "70983d692f648185febe6d6fa607630ae68649f7e6fc45b94680096c06e4fadb"
     numA = MyBigInt(test_add1)
     numB = MyBigInt(test_add2)
     test_add_res = "a78865c13b14ae4e25e90771b54963ee2d68c0a64d4a8ba7c6f45ee0e9daa65b" 
-    #print((numA + numB).getHex() == test_add_res)
+    print((numA + numB).getHex() == test_add_res)
     
     test_sub1= "33ced2c76b26cae94e162c4c0d2c0ff7c13094b0185a3c122e732d5ba77efebc"     
     test_sub2= "22e962951cb6cd2ce279ab0e2095825c141d48ef3ca9dabf253e38760b57fe03"
     numA = MyBigInt(test_sub1)
     numB = MyBigInt(test_sub2)
     test_sub_res = "10e570324e6ffdbc6b9c813dec968d9bad134bc0dbb061530934f4e59c2700b9" 
-    #print((numA - numB).getHex() == test_sub_res)
+    print((numA - numB).getHex() == test_sub_res)
 
     test_inv = "eb8fa7e7"
     numA = MyBigInt(test_inv)
     test_inv_res = "14705818"
-    #print(numA.inv() == test_inv_res)
+    print(numA.inv() == test_inv_res)
 
     test_onemult = "6da3"
     numA = MyBigInt(test_onemult)
-    #print(numA.one_digit_mul(12).getHex(), numA.getHex())
+    print(numA.one_digit_mul(9).getHex() == "3dabb" )
     
     test_shiftR = "eb8f"
     numA = MyBigInt(test_shiftR)
-    #print(numA.shiftR(2) == "3ae3")
+    print(numA.shiftR(2) == "3ae3")
 
 
     #test_onemult = "6da3"
